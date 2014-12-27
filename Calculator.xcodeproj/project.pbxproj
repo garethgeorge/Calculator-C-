@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7FC439471A378F7600D4634B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC439461A378F7600D4634B /* main.cpp */; };
+		7FC439501A37907900D4634B /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4394E1A37907900D4634B /* parser.cpp */; };
+		7FC439571A37E54F00D4634B /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC439551A37E54F00D4634B /* util.cpp */; };
+		7FC4395B1A37E5D700D4634B /* Fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC439591A37E5D700D4634B /* Fraction.cpp */; };
+		7FC439611A37F9D200D4634B /* token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4395F1A37F9D200D4634B /* token.cpp */; };
+		7FC439641A38B17800D4634B /* compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC439621A38B17800D4634B /* compiler.cpp */; };
+		7FC439891A3B804C00D4634B /* evaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC439871A3B804C00D4634B /* evaluator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,18 @@
 /* Begin PBXFileReference section */
 		7FC439431A378F7600D4634B /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC439461A378F7600D4634B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7FC4394E1A37907900D4634B /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		7FC4394F1A37907900D4634B /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		7FC439551A37E54F00D4634B /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		7FC439561A37E54F00D4634B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		7FC439591A37E5D700D4634B /* Fraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fraction.cpp; sourceTree = "<group>"; };
+		7FC4395A1A37E5D700D4634B /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		7FC4395F1A37F9D200D4634B /* token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = token.cpp; sourceTree = "<group>"; };
+		7FC439601A37F9D200D4634B /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
+		7FC439621A38B17800D4634B /* compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compiler.cpp; sourceTree = "<group>"; };
+		7FC439631A38B17800D4634B /* compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		7FC439871A3B804C00D4634B /* evaluator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluator.cpp; sourceTree = "<group>"; };
+		7FC439881A3B804C00D4634B /* evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +75,37 @@
 		7FC439451A378F7600D4634B /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				7FC439581A37E5C600D4634B /* Math */,
+				7FC4394D1A37905F00D4634B /* Parser */,
 				7FC439461A378F7600D4634B /* main.cpp */,
+				7FC439551A37E54F00D4634B /* util.cpp */,
+				7FC439561A37E54F00D4634B /* util.h */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		7FC4394D1A37905F00D4634B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7FC4394E1A37907900D4634B /* parser.cpp */,
+				7FC4394F1A37907900D4634B /* parser.h */,
+				7FC439621A38B17800D4634B /* compiler.cpp */,
+				7FC439631A38B17800D4634B /* compiler.h */,
+				7FC4395F1A37F9D200D4634B /* token.cpp */,
+				7FC439601A37F9D200D4634B /* token.h */,
+				7FC439871A3B804C00D4634B /* evaluator.cpp */,
+				7FC439881A3B804C00D4634B /* evaluator.h */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		7FC439581A37E5C600D4634B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				7FC439591A37E5D700D4634B /* Fraction.cpp */,
+				7FC4395A1A37E5D700D4634B /* Fraction.h */,
+			);
+			name = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC439501A37907900D4634B /* parser.cpp in Sources */,
 				7FC439471A378F7600D4634B /* main.cpp in Sources */,
+				7FC439891A3B804C00D4634B /* evaluator.cpp in Sources */,
+				7FC439641A38B17800D4634B /* compiler.cpp in Sources */,
+				7FC439571A37E54F00D4634B /* util.cpp in Sources */,
+				7FC4395B1A37E5D700D4634B /* Fraction.cpp in Sources */,
+				7FC439611A37F9D200D4634B /* token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +284,7 @@
 				7FC4394C1A378F7600D4634B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
